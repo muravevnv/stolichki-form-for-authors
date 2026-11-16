@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/fancybox.min.css">
+    <link rel="stylesheet" href="./css/old-style.css">
+    <link rel="stylesheet" href="./css/authors-publications.css">
+    <title>Активные вещества</title>
+</head>
+
+<body>
+    <header></header>
+    <div>
+        <div class="container">
+            <a href="#" data-fancybox data-src="#popup1" class="btn">Подтвердите контактные данные</a>
+            <a href="#" data-fancybox data-src="#popup2" class="btn">Подтвердите контактные данные Код</a>
+            <a href="#" data-fancybox data-src="#popup3" class="btn">Подтвердите контактные данные Успешная отправка</a>
+        </div>
+    </div>
+    <div class="popup-contacts-confirm" id="popup1">
+        <button type="button" data-fancybox-close class="popup-contacts-confirm__close-btn reset-btn">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 6L6 18M6 6L18 18" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    stroke="#99999A" />
+            </svg>
+        </button>
+        <div class="popup-contacts-confirm__inner">
+            <div class="popup-contacts-confirm__select">
+                <div class="popup-contacts-confirm__select-title">
+                    Подтвердите контактные данные
+                </div>
+                <div class="popup-contacts-confirm__select-desc">
+                    Чтобы отправить анкету, подтвердите, что указанные контактные данные принадлежат вам
+                </div>
+                <div class="popup-contacts-confirm__select-controls">
+                    <label class="form-toggle form-toggle_radio">
+                        <input type="radio" name="select-contacts" checked>
+                        <i></i>
+                        <span>
+                            На телефон
+                            <span>+7 (927) 357 97 32</span>
+                        </span>
+                    </label>
+                    <label class="form-toggle form-toggle_radio">
+                        <input type="radio" name="select-contacts">
+                        <i></i>
+                        <span>
+                            На email
+                            <span>example@stolichki.ru</span>
+                        </span>
+                    </label>
+                </div>
+                <button type="button" class="popup-contacts-confirm__select-btn btn btn_w100">
+                    Получить код
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="popup-contacts-confirm" id="popup2">
+        <button type="button" data-fancybox-close class="popup-contacts-confirm__close-btn reset-btn">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 6L6 18M6 6L18 18" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    stroke="#99999A" />
+            </svg>
+        </button>
+        <div class="popup-contacts-confirm__inner">
+            <div class="popup-contacts-confirm__code">
+                <button type="button" class="popup-contacts-confirm__code-back-btn reset-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14 6L8 12L14 18" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            stroke="#99999A" />
+                    </svg>
+                    Выбор подтверждения
+                </button>
+                <div class="popup-contacts-confirm__code-desc">
+                    <p>
+                        Введите код из смс отправленного
+                        на <b>+7 (927) 357-97-31</b> <a href="#">Изменить</a>
+                    </p>
+                    <p>
+                        Или последние 4 цифры входящего номера
+                    </p>
+                </div>
+                <div class="popup-contacts-confirm__code-enter">
+                    <div class="popup-contacts-confirm__code-title">
+                        Введите код
+                    </div>
+                    <div class="popup-contacts-confirm__code-fields">
+                        <input type="text" class="popup-contacts-confirm__code-field">
+                        <input type="text" class="popup-contacts-confirm__code-field">
+                        <input type="text" class="popup-contacts-confirm__code-field">
+                        <input type="text" class="popup-contacts-confirm__code-field">
+                    </div>
+                    <div class="popup-contacts-confirm__code-caption">
+                        Получить новый код через 60 сек.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup-contacts-confirm popup-contacts-confirm_mobile" id="popup3">
+        <button type="button" data-fancybox-close class="popup-contacts-confirm__close-btn reset-btn">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 6L6 18M6 6L18 18" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    stroke="#99999A" />
+            </svg>
+        </button>
+        <div class="popup-contacts-confirm__inner">
+            <div class="popup-contacts-confirm__success">
+                <div class="popup-contacts-confirm__success-icon">
+                    <img src="./images/authors-publications/success.png" alt="">
+                </div>
+                <div class="popup-contacts-confirm__success-title">
+                    Данные успешно отправлены
+                </div>
+                <div class="popup-contacts-confirm__success-desc">
+                    Спасибо! Мы получили информацию об авторе. Если потребуется что-то уточнить, мы свяжемся с вами
+                    по указанным контактам
+                </div>
+                <button type="button" class="popup-contacts-confirm__success-btn btn btn_w100" data-fancybox-close">
+                    Хорошо
+                </button>
+            </div>
+        </div>
+    </div>
+    <footer></footer>
+    <script src="script/jquery.min.js"></script>
+    <script src="script/fancybox.min.js"></script>
+    <script src="script/main.js"></script>
+</body>
+
+</html>
