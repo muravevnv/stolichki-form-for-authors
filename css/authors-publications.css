@@ -92,6 +92,16 @@
 .authors-publications__form-item {
   width: 100%;
 }
+.authors-publications__form-labels {
+  display: grid;
+  grid-template-columns: 1fr 130px 130px;
+  gap: 8px;
+}
+@media screen and (max-width: 767.98px) {
+  .authors-publications__form-labels {
+    display: none;
+  }
+}
 .authors-publications__form-group {
   width: 100%;
 }
@@ -104,6 +114,27 @@
 }
 .authors-publications__form-group-item {
   width: 100%;
+}
+.authors-publications__form-group-item--grid {
+  display: grid;
+  grid-template-columns: 1fr 130px 130px;
+  gap: 8px;
+}
+@media screen and (max-width: 767.98px) {
+  .authors-publications__form-group-item--grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .authors-publications__form-group-item--grid > *:nth-of-type(1) {
+    grid-column: span 2;
+  }
+}
+.authors-publications__form-group-el-label {
+  display: none;
+}
+@media screen and (max-width: 767.98px) {
+  .authors-publications__form-group-el-label {
+    display: block;
+  }
 }
 .authors-publications__form-add-btn {
   display: flex;

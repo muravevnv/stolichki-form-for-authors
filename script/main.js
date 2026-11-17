@@ -119,7 +119,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const template = list.querySelector('.authors-publications__form-group-item').cloneNode(true);
 
             const getInputsCount = () =>
-                list.querySelectorAll('.js-authors-publications-form-group-input').length;
+                list.querySelectorAll('.js-authors-publications-form-group-item').length;
 
             const updateButton = () => {
                 addButton.disabled = getInputsCount() >= maxInputs;

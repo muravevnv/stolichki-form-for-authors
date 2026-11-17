@@ -110,9 +110,8 @@
                         <span class="form-error">Введите имя</span>
                     </label>
                     <label class="authors-publications__form-item">
-                        <div class="form-label">Отчество <span class="color-attention">*</span></div>
+                        <div class="form-label">Отчество</div>
                         <input type="text" class="form-control" placeholder="Например, Иванович" inputmode="text">
-                        <span class="form-error">Введите отчество</span>
                     </label>
                     <div class="authors-publications__form-item form-add-photo">
                         <div class="form-add-photo__label">
@@ -212,14 +211,48 @@
                         </button>
                     </div>
                     <div class="authors-publications__form-group js-authors-publications-form-group">
-                        <label class="authors-publications__form-label form-label">
-                            Сведение о повышении квалификации <span class="color-attention">*</span>
-                        </label>
+                        <div class="authors-publications__form-labels">
+                            <div class="form-label">
+                                Сведение о повышении квалификации <span class="color-attention">*</span>
+                            </div>
+                            <div class="form-label">
+                                Год повышения
+                                <span class="color-attention">*</span>
+                            </div>
+                            <div class="form-label">
+                                Академ. часы
+                                <span class="color-attention">*</span>
+                            </div>
+                        </div>
                         <div class="authors-publications__form-group-list">
-                            <div class="authors-publications__form-group-item">
-                                <input type="text" class="form-control js-authors-publications-form-group-input"
-                                    placeholder="Введите сведения о повышении квалификации" inputmode="text">
-                                <span class="form-error">Добавьте сведения о повышении квалификации</span>
+                            <div
+                                class="authors-publications__form-group-item authors-publications__form-group-item--grid">
+                                <label class="authors-publications__form-group-el">
+                                    <div class="authors-publications__form-group-el-label form-label">
+                                        Сведение о повышении квалификации <span class="color-attention">*</span>
+                                    </div>
+                                    <input type="text" class="form-control js-authors-publications-form-group-input"
+                                        placeholder="Например, «Ультразвуковая диагностика»" inputmode="text">
+                                    <span class="form-error">Добавьте сведения о повышении квалификации</span>
+                                </label>
+                                <label class="authors-publications__form-group-el">
+                                    <div class="authors-publications__form-group-el-label form-label">
+                                        Год повышения
+                                        <span class="color-attention">*</span>
+                                    </div>
+                                    <input type="text" class="form-control js-authors-publications-form-group-input"
+                                        placeholder="2023" inputmode="text">
+                                    <span class="form-error">Добавьте год повышения</span>
+                                </label>
+                                <label class="authors-publications__form-group-el">
+                                    <div class="authors-publications__form-group-el-label form-label">
+                                        Академ. часы
+                                        <span class="color-attention">*</span>
+                                    </div>
+                                    <input type="text" class="form-control js-authors-publications-form-group-input"
+                                        placeholder="144" inputmode="text">
+                                    <span class="form-error">Добавьте академ. часы</span>
+                                </label>
                             </div>
                         </div>
                         <button type="button"
